@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starchy Page | Potato Salad</title>
+    <!-- Bootstrap CDN Links -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!-- Bootstrap Icon CDN Link-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+         <!-- Favicon-->
+    <link rel="shortcut icon" href="thoon_image/twiceasnice2.png" type="image/x-icon">
+    <!-- CSS -->
+     <link rel="stylesheet" href="recipe_page.css">
+     <link rel="stylesheet" href="navbar.css">
+     <link rel="stylesheet" href="signup_login.css">
+     <link rel="stylesheet" href="footer.css">
+     <!-- Font Links -->
+    <link href="https://db.onlinewebfonts.com/c/0d1ba576abfaabfd2ba3e72432fcc5b2?family=Nefelibata-Script" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Pacifico&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Merienda:wght@300..900&family=Pacifico&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Merienda:wght@300..900&family=Pacifico&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- sign up form -->
+  <div class="modal fade" id="signup" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content position-relative">
+        <!-- Exit Button -->
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>  
+        <div class="row g-0 w-100">
+          <!-- Left Image Section  -->
+          <div class="col-lg-6 signup-left p-4 text-center d-flex flex-column justify-content-center align-items-center">
+            <div id="white_div">
+              <h2 class="mb-3 Big-Heading">Come Join Us!<h2>
+              <p> <a href="#" class="text text-decoration-none text-black font"><p>Sign up now to take part in exciting food challenges and unlock access to exclusive recipe cards you can download and try at home!</p></a></p>
+            </div>
+          </div>
+
+          <!-- Right Form Section -->
+          <div class="col-md-12 col-lg-6 signup-right form-section">
+            <h3 class="mb-4 text-center Big-Heading">Sign Up Form</h3>
+            <form action="">
+              <div class="d-flex align-items-center my-3">
+                <hr class="flex-grow-1">
+                <span class="mx-2 text-muted text">continue with</span>
+                <hr class="flex-grow-1">
+              </div> 
+              <div class="d-flex justify-content-between gap-2 mb-3">
+                <button class="btn btn-outline-secondary w-100"><i class="bi bi-google me-2"></i></button>
+                <button class="btn btn-outline-secondary w-100"><i class="bi bi-apple me-2"></i></button>
+                <button class="btn btn-outline-secondary w-100"><i class="bi bi-facebook me-2"></i></button>
+                <button class="btn btn-outline-secondary w-100">SSO</button>
+              </div> 
+              <!-- Hr -->
+              <div class="d-flex align-items-center my-3">
+                <hr class="flex-grow-1">
+                <span class="mx-2 text-muted text">or</span>
+                <hr class="flex-grow-1">
+              </div> 
+              <!-- Input group for first and last name-->
+              <div class="input-group mb-3">
+                <span class="input-group-text text">First and Last name</span>
+                <input type="text" name="firstname" class="form-control" placeholder="David">
+                <input type="text" name="lastname" class="form-control" placeholder="Johnson">
+              </div>
+              <!-- Input group for email -->
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-envelope-at icons"></i></span>
+                <div class="form-floating">
+                  <input type="email" name="email" id="email" class="form-control text" placeholder="Enter your email">
+                  <label for="email" class="form-label text">Email</label>
+                </div>
+              </div>
+              <!-- Form floating for username -->
+              <div class="input-group mb-3">
+                <div class="form-floating ">
+                  <input type="text" name="username" id="username" class="form-control text" placeholder="Enter your username">
+                  <label for="username" class="form-label text">Username</label>
+                </div>
+                <span class="input-group-text"><i class="bi bi-pencil-square icons" style="font-size: 20px;"></i></span>
+              </div>
+              <!-- Password -->
+              <div class="input-group ">
+                <span class="input-group-text"><i class="bi bi-shield-lock icons" style="font-size: 20px;"></i></span>
+                <div class="form-floating">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" maxlength="8">
+                    <label for="password" class="form-label">Password</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" name="password" id="password1" class="form-control" placeholder="Password" maxlength="8">
+                  <label for="password1" class="form-label">Confirm</label>
+                </div>
+                <span class="input-group-text"><i class="bi bi-check-lg icons" style="font-size: 20px;"></i></span>
+              </div>
+              <div class="form-text mb-3">8 characters maximum</div>
+              <!--birthday -->
+              <div class="row mb-3">
+                <label for="" class="form-label">Date of birth</label>
+                <div class="form-group birthday">
+                  <div class="row align-items-center mx-2">
+                    <div class="col-md-8 align-items-center">
+                      <label for="birthday">Birthday:</label>
+                    </div>
+                    <div class="col-md-4 align-items-center">
+                      <input type="date" class="form-control" id="birthday" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- gender -->
+              <label for="" class="form-label">Gender</label>
+              <div class="btn-group d-flex mb-3" role="group">
+                <input type="radio" name="gender" id="male" class="btn-check">
+                <label for="male" class="btn btn-custom">Male</label>
+                <input type="radio" name="gender" id="female" class="btn-check">
+                <label for="female" class="btn btn-custom">Female</label>
+                <input type="radio" name="gender" id="other" class="btn-check">
+                <label for="other" class="btn btn-custom">Others</label>
+              </div>
+              <!-- noti -->
+              <div class="row mb-3">
+                <label for="" class="form-label">Notification Preferences</label>
+                <div class="col-md-4">
+                  <input type="radio" name="choice" id="choice1" class="form-check-input">
+                  <label for="choice1" class="form-check-label">Email</label>
+                </div>
+                <div class="col-md-4">
+                  <input type="radio" name="choice" id="choice2" class="form-check-input">
+                  <label for="choice2" class="form-check-label">Phone</label>
+                </div>
+                <div class="col-md-4">
+                  <input type="radio" name="choice" id="choice3" class="form-check-input">
+                  <label for="choice3" class="form-check-label">None</label>
+                </div>
+              </div>
+              <!-- Form Switch -->
+              <div class="form-check form-switch mb-3">
+                <input type="checkbox" name="terms" id="terms" class="form-check-input">
+                <label for="terms" class="form-check-label">Agree to terms and policies</label>
+              </div>
+              <!-- Checkbox button-->
+              <label for="" class="form-label">Verification</label>
+              <div class="mb-3">
+                <input type="checkbox" name="human" id="human" class="form-check-input">
+                <label for="human" class="form-check-label">I'm not a robot</label>
+              </div>
+              <!-- Button btn-group -->
+              <div class="btn-group d-flex" role="group">
+                <button type="reset" class="btn btn-custom"> <i class="bi bi-arrow-counterclockwise me-2"></i>Reset</button>
+                <button type="submit" class="btn btn-custom" onclick="alert('You have created an account. Thanks for joining!')"><i class="bi bi-person-plus me-2"></i>Create Account</button>
+              </div>                  
+            </form>
+            <h5 class="text-center w-100 form-text">
+              Already have an account? <a href="#login_modal" data-bs-toggle="modal" class="log-in">Log in</a>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- login form -->
+  <div class="modal fade" id="login_modal" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content position-relative">
+        <!-- Exit Button -->
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>  
+        <div class="row g-0 w-100">
+          <!-- Left Image Section  -->
+          <div class="col-md-12 col-lg-6 signup-left p-4 text-center d-flex flex-column justify-content-center align-items-center">
+            <div id="white_div">
+              <h2 class="mb-3 Big-Heading">Welcome Back!<h2>
+              <p> <a href="#" class="text-decoration-none text-black font text"><p>Back for more tasty fun? Log in to join the latest challenge and download your newest recipe cards!</p></a></p>
+            </div>
+          </div>
+
+          <!-- Right Form Section -->
+          <div class="col-md-12 col-lg-6 signup-right form-section">
+            <h3 class="mb-4 text-center Big-Heading">Log-in Form</h3>
+
+            <!-- Social Buttons -->
+            <form action="">
+                <!-- Log in with Google buttons -->
+                <div class="d-flex align-items-center my-3">
+                    <hr class="flex-grow-1">
+                    <span class="mx-2 text-muted">continue with</span>
+                    <hr class="flex-grow-1">
+                </div>
+
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                    <button class="btn btn-outline-secondary w-100">
+                        <i class="bi bi-google me-2"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary w-100">
+                        <i class="bi bi-apple me-2"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary w-100">
+                        <i class="bi bi-facebook me-2"></i>
+                    </button>
+                    <button class="btn btn-outline-secondary w-100">SSO</button>
+                </div>
+
+                <!-- Hr -->
+                <div class="d-flex align-items-center my-3">
+                    <hr class="flex-grow-1">
+                    <span class="mx-2 text-muted">or</span>
+                    <hr class="flex-grow-1">
+                </div>
+
+                <!-- Username box -->
+                <div class="mb-3">
+                    <label for="un" class="form-label username">Username</label>
+                    <div class="input-group custom-username">
+                        <span class="icons">
+                            <i class="bi bi-pencil-square" style="font-size: 20px;"></i>
+                        </span>
+                        <input type="text" id="un" class="custom-input" placeholder="Type your username">
+                    </div>
+                </div>
+
+                <!-- Email address box -->
+                <div class="mb-3">
+                    <label for="em" class="form-label username">Email</label>
+                    <div class="input-group custom-username">
+                        <span class="icons">
+                            <i class="bi bi-envelope-at" style="font-size: 20px;"></i>
+                        </span>
+                        <input type="email" id="em" class="custom-input" placeholder="Type your email address">
+                    </div>
+                </div>
+
+                <!-- Password box -->
+                <div class="mb-3">
+                    <label for="ps" class="form-label username">Password</label>
+                    <div class="input-group custom-username">
+                        <span class="icons">
+                            <i class="bi bi-shield-lock" style="font-size: 20px;"></i>
+                        </span>
+                        <input type="password" id="ps" class="custom-input" placeholder="Type your password" maxlength="8">
+                    </div>
+                </div>
+
+                <!-- Forgot Password Link -->
+                <div class="forgot-password mb-3">
+                    <a href="#pw_modal" data-bs-toggle="modal">Forgot password?</a>
+                </div>
+
+                <!-- Button btn-group -->
+                <div class="btn-group d-flex" role="group">
+                    <button type="reset" class="btn btn-custom">
+                        <i class="bi bi-arrow-counterclockwise me-2"></i>Reset
+                    </button>
+                    <button type="submit" class="btn btn-custom" onclick="alert('You have login to your account. Welcome back!')">
+                        <i class="bi bi-person-plus me-2"></i>Log in
+                    </button>
+                </div>
+            </form>
+
+            <div class="justify-content-center">
+                <div class="form-text">
+                    Don't have an account?
+                </div>
+                <button type="button" class="btn btn-custom2 justify-content-center text-center su-bt" data-bs-target="#signup" data-bs-toggle="modal">
+                    Sign-up
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- forget password -->
+  <div class="modal fade" id="pw_modal" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content p-0 bg-orange position-relative">
+        <!-- Close Button -->
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <!-- Inner White Card -->
+        <div class="inner-card p-4 text-center mx-auto my-5">
+          <h4 class="Big-Heading mb-2">Forgot Password</h4>
+          <p class="form-text mb-3">Enter your email address</p>
+          <input type="email" class="form-control mb-3" placeholder="Enter email address">
+          <button class="btn btn-submit w-100" data-bs-target="#fpw_modal" data-bs-toggle="modal">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="fpw_modal" data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content p-0 bg-orange position-relative">
+        <!-- Close Button -->
+        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <!-- Inner White Card -->
+        <div class="inner-card p-4 text-center mx-auto my-5">
+          <h4 class="Big-Heading mb-3">New Password</h4>
+          <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Create new password">
+          <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Confirm your password">
+          <button class="btn btn-submit w-100" data-bs-dismiss="modal" aria-label="Close">Change</button>
+        </div>
+      </div>
+    </div>
+  </div>
+       <!-- Glassy Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-glass ">
+    <div class="container-fluid">
+
+      <!-- Left: Profile Image -->
+      <div class="mobile-profile-img">
+        <img src="yoon_image/review-profiles.png" alt="Profile" height="50px" width="50px" style="border-radius: 50%; object-fit: cover;">
+      </div>
+
+      <!-- Center: Brand Logo -->
+      <a class="navbar-brand mx-auto" href="index.html">
+        <img src="thoon_image/twiceasnice2.png" alt="Twice as Nice">
+      </a>
+
+      <!-- Right: Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <span style="font-size: 30px; color: #dc5126;"><i class="bi bi-list"></i></span>
+      </button>
+
+      <!-- Desktop Menu -->
+      <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarContent">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <!-- Center: Nav Links -->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item "><a class="nav-link" href="recipe_hub.html">Recipe Hub</a></li>
+            <li class="nav-item "><a class="nav-link" href="why_it_matter.html">Why it matters</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Features <i class="bi bi-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item navbar-selections" href="storage_tips.html">Storage & Fridge Tips</a></li>
+                <li><a class="dropdown-item navbar-selections" href="smart_shopping.html">Smart Shopping Guide</a></li>
+                <li><a class="dropdown-item navbar-selections" href="recipecard.html">Downloadable Recipe Cards</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Community <i class="bi bi-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item navbar-selections" href="blog.html">Blog</a></li>
+                <li><a class="dropdown-item navbar-selections" href="challenge_page.html">Leftover Challenge</a></li>
+                <li><a class="dropdown-item navbar-selections" href="share_request_form.html">Share & Request Recipes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+          </ul>
+          <!-- Right: Log in Links -->
+          <ul class="navbar-nav">
+            <img src="yoon_image/review-profiles.png" alt="Profile" width="100%" height="60px" style="border-radius: 50%; object-fit: cover;">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-start w-50" id="mobileMenu" data-bs-scroll="true" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title" style="font-size: 1.2rem; font-family: 'Merienda';">Twice as Nice</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body overflow-auto">
+      <ul class="nav flex-column nav-pills text-center ">
+        <li class="nav-item mt-3 main-link">
+          <a href="index.html" class="nav-link nav-main">Home</a>
+        </li>
+        <li class="nav-item main-link">
+          <a href="recipe_hub.html" class="nav-link nav-main">Recipe Hub</a>
+        </li>
+        <li class="nav-item main-link">
+          <a href="why_it_matter.html" class="nav-link nav-main">Why it matters</a>
+        </li>
+        <!-- Features Collapse with icon -->
+        <li class="nav-item main-link">
+          <a class="nav-link d-flex justify-content-between align-items-center nav-main" data-bs-toggle="collapse" href="#featuresCollapse" role="button" aria-expanded="false" aria-controls="featuresCollapse">
+            <span></i> Features</span>
+            <i class="bi bi-chevron-down"></i>
+          </a>
+          <div class="collapse rounded mb-2" id="featuresCollapse">
+            <ul class="list-unstyled mb-0 extra">
+              <li><a class="nav-link extra-link" href="storage_tips.html">Storage & Fridge Tips</a></li>
+              <li><a class="nav-link extra-link" href="smart_shopping.html">Smart Shopping Guide</a></li>
+              <li><a class="nav-link extra-link" href="recipecard.html">Downloadable Recipe Cards</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- Community Collapse with icon -->
+        <li class="nav-item mt-2 main-link">
+          <a class="nav-link d-flex justify-content-between align-items-center nav-main" data-bs-toggle="collapse" href="#communityCollapse" role="button" aria-expanded="false" aria-controls="communityCollapse">
+            <span><i class="bi bi-people-fill me-1"></i> Community</span>
+            <i class="bi bi-chevron-down"></i>
+          </a>
+          <div class="collapse rounded" id="communityCollapse">
+            <ul class="list-unstyled mb-0 extra">
+              <li><a class="nav-link extra-link" href="blog.html">Blog</a></li>
+              <li><a class="nav-link extra-link" href="challenge_page.html">Leftover Challenge</a></li>
+              <li><a class="nav-link extra-link" href="share_request_form.html">Share & Request Recipes</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item mt-2 main-link">
+          <a href="about_us.html" class="nav-link nav-main">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center hero-background align-items-center">
+            <div class="col-md-6 recipe-text-box">
+                <h1 class="detail-recipe-title">Potato Salad</h1>
+                <p class="recipe-subtitle">Potato salad is a creamy and refreshing dish made with boiled potatoes mixed with ingredients like mayonnaise, mustard, chopped onions, boiled eggs, and herbs. Sometimes, vegetables like celery, pickles, or peas are added for extra flavor and crunch. The salad is usually served cold, making it a popular side dish for picnics, barbecues, and family meals. Potato salad is smooth, tangy, and slightly sweet, depending on the recipe. It’s a filling and tasty dish enjoyed around the world in many different styles.</p>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="Recipe_img/potato_salad.jpg" alt="potato_salad" class="recipe-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid " id="comeback">
+        <div class="row justify-content-center my-5 ">
+            <div class="col-md-4">
+                <div class="container w-100">
+                        <div class="ingredient-card ">
+                        <div class="mb-3 d-flex ">
+                            <i class="bi bi-list-check title-icon"></i><span class="ingredient-title">Ingredients</span>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="item1">
+                            <label class="form-check-label" for="item1">Potatoes - 1,5 lbs | 700g</label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="item2">
+                            <label class="form-check-label" for="item2">Eggs - 5 </label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="item3">
+                            <label class="form-check-label" for="item3">Onion - 1,5 oz | 50g</label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="item4">
+                            <label class="form-check-label" for="item4">Celery - 1 stalk</label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="item5">
+                            <label class="form-check-label" for="item5">Pickled cucumbers - 1,5 oz | 50g</label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="item6">
+                            <label class="form-check-label" for="item6">Scallions - 0,5 oz | 10g</label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="item7">
+                            <label class="form-check-label" for="item7">Mayonnaise - 5 tbsp</label>
+                        </div>
+
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="item8">
+                            <label class="form-check-label" for="item8">Dijon mustard - 2 tsp</label>
+                        </div>
+
+                         <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="item9">
+                            <label class="form-check-label" for="item9">Apple cider vinegar - 1 tbsp</label>
+                        </div>
+
+                         <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="item10">
+                            <label class="form-check-label" for="item10">Dried paprika - ½ tsp</label>
+                        </div>
+
+                         <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="item11">
+                            <label class="form-check-label" for="item11">Salt - to taste</label>
+                        </div>
+
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-7 ">
+                <div class="container recipe-box w-100">
+                     <h4>Step by Step Instruction</h4>
+                    <ol class="preparation " >
+                        <li class="mb-3"> Add eggs in a saucepan, pour in cold water, and bring to a boil, turn off the heat, cover the saucepan, and let them leave for 15 minutes. Then, cool the eggs in ice water and peel them.</li>
+                        <li class="mb-3">Cut the potatoes into 1 cm cubes, rinse in cold water, place in a saucepan, cover with water, bring to a boil over medium heat, reduce the heat to low, and cook for 7-10 minutes. Towards the end of cooking, season with salt to taste and check for doneness with a fork. Drain on a colander after cooking.</li>
+                        <li class="mb-3">In a salad bowl, combine the boiled potatoes, diced hard boiled eggs, finely chopped onions, celery, pickled cucumbers, and scallions.</li>
+                        <li class="mb-3">In a separate bowl, mix mayonnaise, dijon mustard, apple cider vinegar, paprika, black pepper, salt. Add potato salad dressing to the salad bowl with the vegetables and mix well.</li>
+                        <li class="mb-3"> Serve as a salad or side dish with meat or fish, garnished with finely chopped scallions, dill or parsley.</li>
+                    </ol>
+                </div>
+                   
+            </div>
+        </div>
+      
+    </div>
+
+    <div class="page-wrapper ">
+        <div class="video-container">
+            <h2 class="video-title">How to Make Delicious Potato Salad <i class="bi bi-camera-video"></i></h2>
+            <iframe title="Cooking Tutorial" class="video-frame" src="https://www.youtube.com/embed/Sm8RVRxESlk?si=3UjAAN9T3AkIPyNW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+   
+    <div class="container-fluid rating-container my-5">
+    <div class="container text-center rating-small-box icon-container">
+      <p class=" mb-3 rate-text">Rate this recipe</p>
+      <div class="star-rating ">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">&#9733;</label> 
+
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">&#9733;</label>
+
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">&#9733;</label>
+
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">&#9733;</label>
+
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">&#9733;</label>
+      </div>
+    </div>
+    </div>
+
+     <div class="container my-5">
+  <h3 class="text-center mb-4 other-rcp-title">Explore Other Recipes</h3>
+  <div class="row g-4">
+
+    <!-- Recipe Card 1 -->
+     <div class="col-md-6 col-12">
+      <div class="card h-100 d-flex flex-row align-items-start ">
+        <div class="col-lg-3 col-md-5">
+           <img src="Recipe_img/ricecutlet.jpg" class="img-fluid rounded explore-recipe-card" alt="Octopus">
+        </div>
+       <div class="col-lg-8 col-md-7">
+         <div class="ps-3">
+          <h6 class="fw-bold">Rice Cutlets</h6>
+          <p class="mb-2">Crispy snack made from mashed leftover rice mixed with spices and shallow-fried.</p>
+         <a href="rice_cutlets.html" class="btn btn-sm go-button">Explore <i class="bi bi-chevron-right"></i></a>
+        </div>
+       </div>
+       
+      </div>
+    </div>
+
+  <!-- Recipe Card 2 -->
+     <div class="col-md-6 col-12">
+      <div class="card h-100 d-flex flex-row align-items-start ">
+        <div class="col-lg-3 col-md-5">
+           <img src="Recipe_img/friedrice.jpg" class="img-fluid rounded explore-recipe-card" alt="fried_rice">
+        </div>
+       <div class="col-lg-8 col-md-7">
+         <div class="ps-3">
+          <h6 class="fw-bold">Fried Rice</h6>
+          <p class="mb-2">A quick and tasty fried rice made with leftover rice, eggs, and veggies. Ready in just 15 minutes.</p>
+         <a href="fried_rice.html" class="btn btn-sm go-button">Explore <i class="bi bi-chevron-right"></i></a>
+        </div>
+       </div>
+       
+      </div>
+    </div>
+
+    
+    <!-- Recipe Card 3 -->
+     <div class="col-md-6 col-12">
+      <div class="card h-100 d-flex flex-row align-items-start ">
+        <div class="col-lg-3 col-md-5">
+           <img src="Recipe_img/beef_noodle.jpg" class="img-fluid rounded explore-recipe-card" alt="beef_noodle">
+        </div>
+       <div class="col-lg-8 col-md-7">
+         <div class="ps-3">
+          <h6 class="fw-bold">Beef noodle</h6>
+          <p class="mb-2">A hearty noodle dish featuring tender beef slices and vegetables tossed in a flavorful sauce.</p>
+         <a href="beef_noodle.html" class="btn btn-sm go-button">Explore <i class="bi bi-chevron-right"></i></a>
+        </div>
+       </div>
+       
+      </div>
+    </div>
+
+    <!-- Recipe Card 4 -->
+     <div class="col-md-6 col-12">
+      <div class="card h-100 d-flex flex-row align-items-start ">
+        <div class="col-lg-3 col-md-5">
+           <img src="Recipe_img/chicken_noodle_soup.jpg" class="img-fluid rounded explore-recipe-card" alt="chicken_noodle_soup">
+        </div>
+       <div class="col-lg-8 col-md-7">
+         <div class="ps-3">
+          <h6 class="fw-bold">Chicken Noodle Soup</h6>
+          <p class="mb-2">A comforting soup combining tender chicken pieces with noodles in a savory broth.</p>
+         <a href="chicken_noodle_soup.html" class="btn btn-sm go-button">Explore <i class="bi bi-chevron-right"></i></a>
+        </div>
+       </div>
+       
+      </div>
+    </div>
+    
+    <!-- Recipe Card 5 -->
+     <div class="col-md-6 col-12">
+      <div class="card h-100 d-flex flex-row align-items-start ">
+        <div class="col-lg-3 col-md-5">
+           <img src="Recipe_img/carbonara_pasta.jpg" class="img-fluid rounded explore-recipe-card" alt="carbonara_pasta">
+        </div>
+       <div class="col-lg-8 col-md-7">
+         <div class="ps-3">
+          <h6 class="fw-bold">Carbonara Pasta</h6>
+          <p class="mb-2">A traditional Italian pasta made with eggs, cheese, and pancetta, delivering a creamy texture without cream.</p>
+         <a href="carbonara_pasta.html" class="btn btn-sm go-button">Explore <i class="bi bi-chevron-right"></i></a>
+        </div>
+       </div>
+       
+      </div>
+    </div>
+
+    <!-- Recipe Card 6 -->
+     <div class="col-md-6 col-12">
+      <div class="card h-100 d-flex flex-row align-items-start ">
+        <div class="col-lg-3 col-md-5">
+           <img src="Recipe_img/creamy_garlic_pasta.jpg" class="img-fluid rounded explore-recipe-card" alt="creamy_garlic_pasta">
+        </div>
+       <div class="col-lg-8 col-md-7">
+         <div class="ps-3">
+          <h6 class="fw-bold">Creamy Garlic Pasta</h6>
+          <p class="mb-2">A rich and creamy pasta dish infused with garlic flavor, perfect for a quick comfort meal.</p>
+         <a href="creamy_garlic_pasta.html" class="btn btn-sm go-button">Explore <i class="bi bi-chevron-right"></i></a>
+        </div>
+       </div>
+       
+      </div>
+    </div>
+
+
+  </div>
+    </div>
+
+
+    <br><br><br><br>
+    <footer class="footer bg-footer text-white pt-5 pb-4">
+      <!-- Go Back to Top Button -->
+      <a href="#comeback" class="go-top"><i class="bi bi-arrow-90deg-up scroll"></i></a>
+      <div class="container">
+          <div class="row">
+            <!-- Contact Us -->
+            <div class="col-lg-3 col-md-6 col-5 mb-3">
+              <div class="d-flex align-items-start">
+                <img src="thoon_image/twiceasnicewhite.png" alt="" class="footer-logo">
+              </div>
+              <h5>Contact Us</h5>
+              <p class="mb-1"><i class="bi bi-telephone"></i> (+95) 12345 6789</p>
+              <p><i class="bi bi-envelope"></i> twice.as.nice@gmail.com</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6 col-5">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled footer-links">
+                <li>&rsaquo; <a href="index.html">Home</a></li>
+                <li>&rsaquo; <a href="about_us.html">About us</a></li>
+                <li>&rsaquo; <a href="why_it_matter.html">Why it matters</a></li>
+                <li>&rsaquo; <a href="reference.html">Reference</a></li>
+                <li>&rsaquo; <a href="#signup" data-bs-toggle="modal">Sign up</a></li>
+                <li>&rsaquo; <a href="#login_modal" data-bs-toggle="modal">Login</a></li>
+              </ul>
+            </div>
+            <!-- Recipe Library -->
+            <div class="col-lg-2 col-md-6">
+              <h5>Recipe Hub</h5>
+              <ul class="list-unstyled footer-links">
+                <li>&rsaquo;<a href="starchy_page.html"> Starchy Leftovers</a></li>
+                <li>&rsaquo;<a href="meaty_page.html"> Meaty Leftovers</a></li>
+                <li>&rsaquo;<a href="veggy_page.html"> Veggy Leftovers</a></li>
+              </ul>
+              <!-- Carousel Plate -->
+              <!-- Carousel (hidden on screens <768px) -->
+              <div id="footerCarousel" class="carousel footer-carousel-box slide carousel-fade d-none d-md-block mt-3" data-bs-ride="carousel">
+                <div class="carousel-inner overflow-hidden" style="width: 96px; height: 96px; ">
+                  <div class="carousel-item active">
+                    <img src="yoon_image/yoon11.png" class="d-block footer-carousel" alt="Food 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="yoon_image/yoon12.png" class="d-block footer-carousel" alt="Food 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="yoon_image/yoon14.png" class="d-block footer-carousel" alt="Food 3">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Community & Features -->
+            <div class="col-lg-2 col-md-6">
+              <h5>Community</h5>
+              <ul class="list-unstyled footer-links">
+                <li>&rsaquo;<a href="blog.html"> Blog</a></li>
+                <li>&rsaquo;<a href="share_request_form.html"> Share & Request Recipes</a></li>
+                <li>&rsaquo;<a href="challenge_page.html"> Leftover Challenge</a></li>
+              </ul>  
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="">Features</h5>
+              <ul class="list-unstyled footer-links">
+                <li>&rsaquo;<a href="storage_tips.html"> Storage & Fridge Tips</a></li>
+                <li>&rsaquo;<a href="smart_shopping.html"> Smart Shopping Guide</a></li>
+                <li>&rsaquo;<a href="recipecard.html"> Recipe Cards</a></li>
+              </ul>
+              <div class="d-flex gap-3 mt-3">
+                <i class="bi bi-youtube fs-5 social-icon"></i>
+                <i class="bi bi-facebook fs-5 social-icon"></i>
+                <i class="bi bi-twitter fs-5 social-icon"></i>
+                <i class="bi bi-instagram fs-5 social-icon"></i>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <p class="text-center small mb-0">&copy; Copyright 2025. All rights reserved. Developed by Twice as Nice</p>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1268 @@
+
+body {
+    background-color: #fff8f0;
+    overflow-x: hidden;
+}
+/* Hero section */
+.home-hero {
+    background: url(thoon_image/homeherosection.png) center no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px;
+    height: 40%;
+    border-bottom: 2px solid #fff8f0;
+}
+.home-hero-box {
+    margin-top: 50px;
+}
+.home-large-grid img {
+    height: 60vh;
+    width: 100%;
+    border: 2px solid #fff8f0;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* what we offer */
+    .wwo_title {
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+ 
+    .rm {
+        color: black;
+    }
+ 
+    .wwo:hover a {
+        color: #fff;
+    }
+    .wwo {
+        background-color: #fff8f0;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, background-color 0.23s ease;
+    }
+    .wwo:hover {
+        background-color: hsl(18, 81%, 58%);
+        box-shadow: 0 0 20px #ea713c;
+        color: white;
+        transform: scale(1.1);
+    }
+ 
+    .wwo .icon_wwo {
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
+    }
+.home-small-grid img{
+
+    height: 29vh;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid #fff8f0;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.home-small-grid img:hover {
+  transform: rotate(2deg);
+    box-shadow: 0 0 8px 3px #e1561f98;
+}
+.home-large-grid img:hover {
+  transform: rotate(2deg);
+    box-shadow: 0 0 8px 3px #e1561f98;
+}
+.home-hero-text h1{
+    color: #fff8f0;
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;
+    text-shadow: 2px 2px 3px rgba(240, 240, 240, 0.306);
+}
+.home-hero-text p {
+    font-size: 15px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            text-align: left;
+            color: #fff8f0;
+}
+.home-hero-btn:hover {
+    color: #dc5216;
+}
+.home-hero-btn {
+    padding: 10px;
+            color: #fff8f0;
+            border: 2px solid #fff8f0;
+            border-radius: 50px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 15px;
+            font-family: "Ubuntu", serif;
+            font-weight: 400;
+            font-style: normal;
+}
+@media (max-width:768px) {
+    .home-grid {
+        display: none;
+    }
+    .home-hero-text h2 {
+        text-align: center;
+    }
+    .home-hero-text p {
+        text-align: center;
+    }
+    .home-hero-btn {
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+}
+/* Hero section end */
+
+/* Our Features start */
+.feature-heading {
+  font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.features-section {
+    margin-top: 95px;
+    padding: 60px 20px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  position: relative;
+  border: 2px solid #dc5216;
+  background: #fff8f0;
+  border-radius: 20px;
+  padding: 60px 20px 30px; /* extra top padding for overlap */
+  text-align: center;
+  width: 300px;
+  height: 210px;
+  box-shadow: 0 2px 10px #dc51163a;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-circle {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  border: 2px solid #dc5216;
+  background: #fff8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px #dc51163a;
+  z-index: 2;
+}
+
+.icon-circle img {
+  width: 50px;
+}
+
+.card-content h2 {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #dc5216;
+}
+
+.card-content p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    text-align: justify;
+}
+@media (max-width:768px) {
+    .feature-card {
+        margin: 10px;
+    }
+}
+    .about_us {
+      position: relative;
+      height: 430px;
+      background: url(yoon_image/yoon8.png);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 100px;
+    }
+ 
+    .about_us .overlay_header {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+ 
+    .about_us .header_text {
+      z-index: 3;
+      position: relative;
+    }
+/* Category explore */
+.foodbox {
+     background: url(thoon_image/starchyherosmalldvs.png) center center / cover no-repeat;
+    padding: 70px 0;
+    margin: 0;
+    border-bottom: 2px solid #dc5216;
+    border-top: 2px solid #dc5216;
+    width: 100%;
+}
+.pic img {
+    width: 100%;
+    height: 50vh;
+    transition: transform 0.3s ease-in;
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+}
+.category-bg {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid #fff8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.word h3 {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: #dc5216;
+}
+.word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.word p {
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.category-btn {
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    display: block;
+
+    border-radius: 30px;
+    white-space: nowrap;
+
+    padding: 10px;
+    color: #fff8f0;
+    border: 2px solid #fff8f0;
+}
+
+.category-btn:hover {
+    background-color: #fff8f0;
+    color: #dc5216;
+}
+@media (max-width:768px) {
+    .category-bg {
+        width: 100%;
+    }
+    .category-btn {
+        width: 60%;
+    }
+}
+/* Category end */
+
+/* transformation leftover */
+.leftovers-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #dc5216;
+}
+
+.leftovers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.leftover-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.leftover-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #dc5216;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.leftover-item img:hover {
+  transform: scale(1.05);
+}
+
+.leftover-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .leftovers-container {
+    gap: 5px;
+  }
+
+  .leftover-item {
+    width: 90px;
+  }
+
+  .leftover-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .leftover-item p {
+    font-size: 12px;
+  }
+}
+/* transformation end */
+
+/* Storage and shopping */
+.storage-fridge-section, .smart-shopping-section {
+      padding: 3rem 1rem;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      
+    }
+
+    .storage-fridge-section {
+     background: url(thoon_image/starchyherosmalldvs.png);
+     object-fit: cover;
+     border: 2px solid #dc5216;
+    }
+
+    .smart-shopping-section {
+      background-color: #e1571f;
+      color: white;
+      border: 2px solid #fff;
+    }
+
+    .storage-fridge-img, .smart-shopping-img {
+      max-width: 100%;
+      height: 200px;
+    }
+
+    .storage-fridge-btn {
+        font-size: 15px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        border-radius: 30px;
+        padding: 10px;
+        color: #dc5216;
+        border: 2px solid #dc5216;
+        background-color: #dc511600;
+        transition: background-color 0.3s ease;
+    }
+    .storage-fridge-btn:hover {
+        background-color: #dc5216;
+        color: #fff8f0;
+    }
+.category-btn:hover {
+    color: white !important;
+}
+    .smart-shopping-btn {
+        font-size: 15px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        border-radius: 30px;
+        padding: 10px;
+        color: #fff8f0;
+        border: 2px solid #fff8f0;
+        background-color: #dc511600;
+        transition: background-color 0.3s ease;
+    }
+    .smart-shopping-btn:hover {
+        background-color: #fff8f0;
+        color: #dc5216;
+    }
+    .storage-title {
+        font-size: 1.2rem;
+        font-family: "Merienda";
+        font-weight: bold;
+        font-style: normal;
+        text-align: left;
+        margin-bottom: 10px;
+        color: #dc5216;
+    }
+    .shopping-desc {
+      font-size: 15px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        color: #fff8f0;
+    }
+    .storage-desc {
+        font-size: 15px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        color: #000000;
+    }
+/* Storage end */
+
+/* Recipe card start */
+.home-recipe-card-box {
+    background: url(thoon_image/category_bg.png) center;
+    object-fit: cover;
+    padding: 70px;
+    border-top: 2px solid #dc5216;
+    border-bottom: 2px solid #dc5216;
+}
+    .home-recipe-scroll-wrapper {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      padding: 20px 0;
+    }
+    .home-recipe-scroll-wrapper:hover .home-recipe-scroll-track {
+        animation-play-state: paused;
+    }
+
+        /* Container */
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center; /* Center content */
+            gap: 20px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Text Section */
+        .home-hero-text {
+            flex: 1;
+            padding: 20px;
+            max-width: 48%;
+        }
+
+        /* Image Gallery */
+        .home-img-gallery {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            max-width: 48%;
+            padding: 20px;
+        }
+
+        .home-hero-text h1 {
+            font-size: 1.7rem;
+            font-family: "Merienda";
+            font-weight: bold;
+            font-style: normal;
+            color: #dc5126;
+            margin-bottom: 10px;
+            transition: margin-left 1s ease-in-out;
+        }
+        .home-hero-text h1:hover {
+            margin-left: 10px;
+        }
+        .home-hero-text h3 {
+            color: #dc5126;
+            font-size: 15px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            margin-bottom: 20px;
+            
+        }
+        .home-hero-text p {
+            font-size: 15px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 1.6;
+        }
+
+        .home-hero-text button {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            background: #ea713c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .home-hero-text button:hover {
+            background-color: #dc5126;
+        }
+        .home-img-gallery img {
+            width: 100%;
+            height: 150px;
+            border: 1px solid #dc5126;
+            margin: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .home-img-gallery img:hover {
+            transform: rotate(2deg);
+            box-shadow: 0 5px 7px #dc511655;
+        }
+        .first-grid {
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+        .second-grid {
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+        .third-grid {
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+        }
+        .fourth-grid {
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+
+        /* Responsive Layout */
+
+        /* For small screens (below 768px) */
+        @media (max-width: 768px) {
+            .box {
+                flex-direction: column; /* Stack sections vertically */
+                gap: 10px;
+            }
+            .text-section {
+                max-width: 100%;
+            }
+        }
+@media (max-width: 768px) {
+            .starchy-hero {
+            text-align: center;
+            background-image: url(thoon_image/starchyherosmalldvs.png);
+            background-size: cover;
+            }
+            .starchy-hero-subtitle {
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                min-width: auto;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+            .home-hero-text {
+                text-align: center;
+                min-width: auto;
+            }
+            .starchy-hero-buttons {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            }
+ 
+            .starchy-btn {
+            display: flex;
+            justify-content: center;
+            }
+            .starchy-info-panel {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+        }
+        @media (max-width: 768px) {
+            .image-gallery{
+                display: none;
+            }
+        }
+        /* For medium screens (768px to 992px) */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .box {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            .text-section, .image-gallery {
+                max-width: 100%;
+            }
+        }
+@media (max-width: 768px) {
+  .home-hero-text {
+    max-width: 100%;
+    text-align: center; /* optional, for centering text */
+  }
+  .home-hero-text h1{
+    text-align: center;
+  }
+}
+
+
+    .home-recipe-scroll-track {
+      display: flex;
+      width: max-content;
+      animation: scroll-left 30s linear infinite;
+    }
+    .home-recipe-card-btn {
+        font-size: 15px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        border-radius: 30px;
+        width: 60%;
+        display: block;
+        margin: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #dc5216;
+        border: 2px solid #dc5216;
+        background-color: #dc511600;
+    }
+    .home-rcp-card-header {
+      padding: 0;
+    }
+    .home-rcp-card-body {
+      background-color: #dc511600;
+    }
+    .home-recipe-card-btn:hover {
+        background-color: #dc5216;
+        color: #fff8f0;
+    }
+    .home-card-btn-box {
+      background-color: #dc511600;
+      border: none;
+    }
+    .home-recipe-card {
+      width: 350px;
+      min-height: 300px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+        backdrop-filter: blur(5px);
+        background-color: #fce7d067;
+      border: 2px solid #fff8f0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .home-recipe-card img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+      object-position: center center;
+      display: block;
+      pointer-events: none;
+    }
+
+    .home-recipe-card-title {
+      padding: 10px;
+      font-size: 1.2rem;
+        font-family: 'Merienda';
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        color: #dc5216;
+    }
+    .home-rcp-card-title {
+        font-size: 1.7rem;
+        font-family: 'Merienda';
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        color: #dc5216;
+    }
+    .home-rcp-card-title+p {
+        font-size: 15px;
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        color: #000000;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-20%);
+      }
+    }
+@media (max-width: 768px) {
+      @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-20%);
+      }
+    }
+    
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .home-recipe-card {
+        width: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .home-recipe-card {
+        width: 140px;
+        margin: 0 5px;
+      }
+    }
+/* Recipe card end */
+
+/* Blog start*/
+.blog-image {
+            background-image: url(yoon_image/soup.png); 
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            position: relative;
+            color: white;
+            padding: 20px;
+            box-shadow: 0px 2px 9px #dc51166c;
+        }
+        .blog-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .blog-text h2 {
+            font-size: 1.7rem;
+            font-family: "Merienda";
+            font-weight: bold;
+            font-style: normal;
+        }
+        .blog-list {
+            padding: 10px;
+        }
+        .blog-desc-sub {
+            font-size: 15px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            color: #dc5216;
+            text-align: center;
+        }
+        .blog-item {
+            box-shadow: 0px 2px 9px #dc51166c;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #e1571f;
+            transition: box-shadow 0.3s, transform 0.2s;
+            border-bottom: 2px dotted #fff8f0;
+        }
+        .blog-item:hover {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            transform: scale(1.02);
+        }
+        .blog-number {
+            font-size: 1.7rem;
+            font-family: "Merienda";
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            color: #fff8f0;
+        }
+        .blog-link {
+            font-size: 15px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none;
+            color: #fff8f0;
+            display: block;
+            width: 100%;
+        }
+/* End of blog */
+
+/* leftover challenge */
+    .leftover-challenge-card {
+      position: relative;
+      border: 2px dotted #dc5216;
+      border-radius: 8px;
+      padding: 2rem;
+      overflow: visible;
+        background: url(thoon_image/starchyherosmalldvs.png) center;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(64, 57, 41, 0.15);
+    }
+
+    .leftover-challenge-img-wrapper {
+      position: absolute;
+      top: 50%;
+      right: -60px; /* pulls image out of the card */
+      transform: translateY(-50%);
+      animation: leftover-challenge-rotate 6s infinite ease-in-out;
+      z-index: 2;
+    }
+
+    .leftover-challenge-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 2px solid #dc5216;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      object-fit: cover;
+    }
+
+    @keyframes leftover-challenge-rotate {
+      0%   { transform: translateY(-50%) rotate(-3deg); }
+      50%  { transform: translateY(-50%) rotate(3deg); }
+      100% { transform: translateY(-50%) rotate(-3deg); }
+    }
+
+    .leftover-challenge-btn {
+        border: 2px solid #e1571f;
+        background-color: #e1561f00;
+        color: #dc5216;
+        font-size: 15px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .leftover-challenge-btn:hover {
+      background-color: #dc5216;
+      color: #fff8f0;
+    }
+
+    /* Responsive tweak to hide image or reposition */
+    @media (max-width: 576px) {
+      .leftover-challenge-img-wrapper {
+        right: -40px;
+        top: auto;
+        bottom: -20px;
+        transform: none;
+      }
+
+      .leftover-challenge-img {
+        display: none;
+      }
+      .challenge-desc {
+        text-align: center;
+        margin: auto;
+        width: 90%;
+      }
+      .challenge-heading {
+        text-align: center;
+      }
+      .leftover-challenge-btn {
+        text-align: center;
+        display: block;
+        margin: auto;
+      }
+    }
+    .challenge-desc {
+        font-size: 15px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            max-width: 70%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+    }
+    .challenge-heading {
+        font-size: 1.7rem;
+            font-family: "Merienda";
+            font-weight: bold;
+            font-style: normal;
+            color: #dc5216;
+    }
+
+/* Review section */
+.review-box .carousel-control-prev-icon {
+    margin-right: 100px;
+    margin-bottom: 70px;
+}
+.review-box .carousel-control-next-icon {
+    margin-left: 100px;
+    margin-bottom: 70px;
+}   
+
+/* Adjust the padding/margin between images and indicators */
+.review-box .carousel-inner {
+padding-bottom: 50px; /* Add space below images */
+}
+
+@media screen and (max-width:768px) {
+    .slide1 {
+    display: none;
+}
+.slide3 {
+    display: block;
+}
+.review-box .carousel-control-prev-icon {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.review-box .carousel-control-next-icon {
+    margin-left: 0px;
+    margin-bottom: 0px;
+}  
+
+}
+.big_title {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+
+
+.small_title {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+ 
+.other_text {
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (min-width:768px) {
+.slide1 {
+    display: block;
+}
+.slide3 {
+    display: none;
+}
+}
+
+.img1 {
+    border: 3px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px grey;
+    transition: box-shadow 0.3s ease-in
+}
+
+.img1:hover {
+    box-shadow: 0 0 20px white;
+}
+.review-box {
+    border-top: 2px solid #dc5216;
+    border-bottom: 2px solid #dc5216;
+    padding: 50px;
+    height: 70vh;
+    background: url(thoon_image/starchyherosmalldvs.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    object-fit: cover;
+}
+.review-box h4 {
+    font-size: 1.2rem;
+    text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        color: #fff8f0;
+}
+.review-box h2 {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #dc5216;
+}
+/* forms */
+.feedback , .suggest {
+    color: #dc5216;
+}
+.feedback h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-style: normal;
+}
+.suggest h5 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-style: normal;
+}
+.feedback p {
+    font-family: "Ubuntu", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        color: #000000;
+}
+.suggest p {
+    font-family: "Ubuntu", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        color: #000000;
+}
+
+
+/* General styles */
+.feedback, .suggest {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #dc5216;
+}
+
+.feedback:hover, .suggest:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styles with spacing */
+.feedback img, .suggest img {
+    object-fit: cover;
+    height: 300px;
+    transition: transform 0.3s ease, margin-bottom 0.3s ease;
+    margin-bottom: 15px; /* Added spacing below the image */
+}
+
+.feedback:hover img, .suggest:hover img {
+    transform: scale(1.1);
+    margin-bottom: 20px; /* Ensures extra spacing during hover */
+}
+
+
+.share-form-btn {
+        font-size: 15px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        text-align: center;
+        border-radius: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: #dc5216;
+        border: 1px solid #dc5216;
+        background-color: #dc511600;
+}
+.share-form-btn:hover {
+    background-color: #dc5216;
+        color: #fff8f0;
+}
+/* form end */
+
+/* FAQs start*/
+.faq-img {
+    border-radius: 50%;
+  border: 2px solid #dc5216;
+  box-shadow: 0 0 10px #dc511686;
+  max-height: 400px;
+  object-fit: cover;
+}
+.accordion-header button{
+            background-color: #fff8f0;
+            border: 2px solid #dc5216;
+        }
+        .accordion-header .accordion-button {
+            background-color: #fff8f0;
+            color: #dc5216;
+        }
+        .accordion-header {
+            background-color: #fff8f0;
+        }
+        .bodycontainer {
+            background-color: #fff8f0;
+            border-bottom: 2px solid #dc5216;
+            border-top: none;
+            border-left: 2px solid #dc5216;
+            border-right: 2px solid #dc5216;
+            box-shadow: 0 2px 5px #dc511686; /* Red glow on bottom */
+         }
+         .accordion-header button:focus , .accordion-header button:checked {
+            border-color: #dc5216; /* Change border color */
+            box-shadow: 0 0 8px #dc511686; /* Red glow effect */
+            outline: none; /* Removes default outline */
+         }
+
+        /* Bootstrap Accordion Icon Change (Plus Minus icons)*/
+         .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/%3E%3C/svg%3E");
+            transition: all 0.5s;
+        }
+
+         .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/%3E%3C/svg%3E");
+        }
+        
+        .accordion-button::after {
+            filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(1236%) hue-rotate(311deg) brightness(95%) contrast(98%);
+        }
+.home-impact-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .home-impact-title {
+        font-family: 'Merienda', cursive;
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+        color: #dc5126;
+        }
+
+        .home-impact-subtitle {
+            color: #dc5126;
+            font-family: 'Ubuntu';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 15px;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .home-impact-icons .icon-box {
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 15px;
+        color: #dc5126;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .home-impact-icons .icon-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 2px 10px #dc512617;
+        }
+
+        .home-impact-icons i {
+        font-size: 1.7rem;
+        color: #dc5126;
+        margin-bottom: 15px;
+        }
+
+        .home-impact-icons h5 {
+        font-family: 'Merienda', cursive;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        }
+
+        .home-impact-btn .btn {
+        background-color: #ea713c;
+        font-size: 15px;
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        border-radius: 30px;
+        color: #fff8f0;
+        }
+        .home-impact-btn .btn:hover {
+            background-color: #dc5126;
+        }
+    .impact {
+         padding: 60px 20px;
+    }
+    .impact_main {
+      color: #dc5126;
+    }
+    .impact_item {
+        text-align: left;
+        gap: 15px;
+    }
+ 
+    .impact_icon {
+        font-size: 1.9rem;
+        margin-bottom: 0.5rem;
+    }
+ 
+    .impact_title {
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        color: #dc5126;
+    }
+ 
+    .impact_text {
+        font-size: 0.95rem;
+        color: #555;
+    }

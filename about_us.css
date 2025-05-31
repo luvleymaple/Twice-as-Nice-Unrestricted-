@@ -1,0 +1,339 @@
+body {
+    background-color: #fff8f0;
+}
+.big_title span {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+
+ 
+.small_title {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+ 
+.other_text {
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* about us header start */
+.about_us {
+    position: relative;
+    height: 400px;
+    background: url(yoon_image/yoon1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about_us .header_text {
+    z-index: 3;
+    position: relative;
+}
+
+/* intro about us */
+.intro {
+    background-color: #ea713c;
+    border-radius: 23px;
+    padding: 25px;
+    color: white;
+    box-shadow: 0 0 10px #dc51167f;
+}
+
+.section_title .big_title {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+
+.intro .small_title {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.textalign {
+    text-align: justify;
+}
+.intro {
+    transition: transform 0.3s ease;
+}
+.intro:hover {
+    transform: scale(1.07);
+}
+
+.btn_aboutus {
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 1px 7px #dc511632;
+}
+
+.btn_aboutus:hover {
+    cursor: default;
+    background-color: #ffffff;
+    box-shadow: 0 1px 7px #dc51167e;
+}
+
+.intro_icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #ea713c;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.bg-orange {
+    background-color: white;
+}
+
+.section_title .btn_aboutus {
+    font-size: 15px;
+    padding: 5px 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+}
+
+.section_title h2 {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+    margin-top: 10px;
+}
+
+.section_title h2 span {
+    color: #dc5216;
+}
+
+/* sdg goals */
+.sdg-big-heading {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+.sdg_goals {
+    position: relative;
+    color: white;
+    height: 330px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.sdg_goals .small_title {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.overlay_sdg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.87;
+}
+
+.sdg_goals .content_sdg {
+    position: relative;
+    z-index: 1;
+}
+
+.sdg-icon {
+    font-size: 100px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.sdg1 {
+    background-image: url(thoon_image/2.png);
+}
+
+.sdg2 {
+    background-image: url(thoon_image/4.png);
+}
+
+.sdg3 {
+    background-image: url(thoon_image/3.png);
+}
+
+.text-sdg {
+    text-align: center;
+}
+
+.sdg_goals {
+    font-size: 40px;
+}
+
+.overlay1 {
+    background-color: #dda63a;
+}
+
+.overlay2 {
+    background-color:#bf8b2e;
+}
+
+.overlay3 {
+    background-color: #3f7e44;
+}
+
+/* mission, vision, story */
+.mvs_title {
+    color: #dc5216;
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+}
+
+.heading_msv {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+
+.msv_img {
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+    height: 45vh;
+}
+
+/* Meet our team */
+.team-title {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+.profile_img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.profile_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.profile_img:hover img {
+    transform: scale(1.05);
+}
+
+.overlay_team {
+    position: absolute;
+    inset: 0;
+    background-color: #dc51167e;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease;
+}
+
+.profile_img:hover .overlay_team {
+    opacity: 1;
+}
+
+.social_icons a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.team_member h5 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.team_member p {
+    color: #000;
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* contact */
+.contact-title {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+.contact-first-box {
+    box-shadow: 0 1px 5px #dc51167e;
+    transition: box-shadow 0.5s ease;
+}
+.contact-first-box:hover {
+    box-shadow: 0 1px 12px #dc51169f;
+}
+.form_icon {
+    color: #dc5216;
+}
+.contact-second {
+    box-shadow: 0 1px 3px #dc51167e;
+    transition: box-shadow 0.3s ease;
+}
+.contact-second:hover {
+    box-shadow: 0 1px 7px #dc51169f;
+}
+
+.submit_btn {
+    background-color: #dc5216;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 400;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.submit_btn:hover {
+    background-color: #dc5216;
+    box-shadow: 0 1px 5px #dc51169f;
+}

@@ -1,0 +1,55 @@
+.ctn .image_form {
+    background-image: url("thoon_image/form.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+        /* Modal for restrict */
+        .restricted-rcp-card-modal-title {
+            font-family: 'Merienda', cursive;
+            font-size: 1.7rem;
+            color: #dc5126;
+        }
+
+        .restricted-rcp-card-modal-content {
+            border-radius: 8px;
+            border: 1px solid #dc5126;
+            text-align: center;
+        }
+
+        .restricted-rcp-card-modal-body p {
+            font-family: 'Ubuntu';
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .restricted-rcp-card-btn-primary {
+            border-radius: 30px;
+            font-family: 'Ubuntu';
+            font-size: 15px;
+            background-color: #dc5126;
+            border-color: #dc5126;
+            color: white;
+        }
+        .recipe-card-restrict {
+            font-size: 15px;
+            font-family: 'Ubuntu';
+        }
+        .restricted-rcp-card-btn-primary:hover {
+            background-color: #ba4420;
+            border-color: #ba4420;
+            color: white;
+        }
+        .restrict-rcp-no-ac {
+            font-size: 15px;
+            font-family: 'Ubuntu';
+        }
+        .modal-backdrop.show {
+            opacity: 0.6;
+        }
+
+        .modal.show {
+            display: block;
+            background-color: rgba(0, 0, 0, 0.6);
+        }

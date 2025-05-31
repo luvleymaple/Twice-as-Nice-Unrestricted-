@@ -1,0 +1,228 @@
+body{
+    background-color: #fff8f0;
+}
+/* about us header start */
+    .about_us {
+        position: relative;
+        height: 350px;
+        background: url(yoon_image/whyitmatters.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+.big_title {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+
+ 
+.small_title {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+ 
+.other_text {
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+    .about_us .header_text {
+        z-index: 3;
+        position: relative;
+    }
+    /* what we offer */
+    .wwo_title {
+        font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+    }
+ 
+    .rm {
+        color: black;
+    }
+ 
+    .wwo:hover a {
+        color: #fff;
+    }
+    .wwo {
+        background-color: #fff8f0;
+        border-radius: 1rem;
+        padding: 25px;
+        transition: transform 0.3s ease, background-color 0.23s ease;
+    }
+    .wwo_text {
+        font-size: 1.2rem;
+        font-family: "Merienda";
+        font-weight: bold;
+        font-style: normal;
+        color: #000;
+        transition: color 0.3s ease;
+    }
+    .wwo:hover {
+        cursor: default;
+        .wwo_text{
+        color: hsl(18, 81%, 58%);}
+    }
+ 
+    .wwo .icon_wwo {
+        color: #dc5126;
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
+    }
+    /* rules and perks */
+
+.challenge-rules-title {
+      font-family: 'Merienda', cursive;
+      font-size: 1.7rem;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      color: #dc5216;
+    }
+
+    .challenge-rules-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: #dc5216;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .challenge-rules-title:hover::after {
+      width: 100%;
+    }
+
+    .challenge-rules-description {
+      font-family: 'Ubuntu';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      color: #dc5216;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+    }
+
+    .challenge-rules-description:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px #dc511649;
+      background-color: #dc5216;
+      color: #fff8f0;
+    }
+
+    .challenge-rules-icon {
+      color: #dc5216;
+      margin-right: 5px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .challenge-rules-description:hover .challenge-rules-icon {
+      transform: translateY(-3px);
+      color: #fff8f0;
+    }
+
+    .challenge-rules-section {
+      padding: 2rem 1rem;
+    }
+
+    .challenge-rules-image {
+      max-width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      animation: none;
+    }
+
+    .challenge-rules-image:hover {
+      transform: scale(1.05);
+    }
+
+    .challenge-rules-text-group {
+      margin-bottom: 1.5rem;
+    }
+
+.blog-image {
+            background-image: url(yoon_image/yoon13.png); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            position: relative;
+            color: white;
+            padding: 20px;
+            box-shadow: 0px 2px 9px #dc51166c;
+        }
+        .blog-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .blog-text h2 {
+            font-size: 1.7rem;
+            font-family: "Merienda";
+            font-weight: bold;
+            font-style: normal;
+        }
+        .headingtext {
+            font-family: "Merienda";
+            color: #dc5216;
+            font-weight: bold;
+            font-style: normal;
+        }
+        .blog-list {
+            padding: 10px;
+        }
+        .causes-leftover {
+            font-size: 1.7rem;
+            font-family: "Merienda";
+            font-weight: bold;
+            font-style: normal;
+            color: #dc5216;
+            text-align: center;
+        }
+        .blog-item {
+            box-shadow: 0px 2px 9px #dc51166c;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #e1571f;
+            transition: box-shadow 0.3s, transform 0.2s;
+            border-bottom: 2px solid #fff8f0;
+        }
+        .blog-item:hover {
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+            transform: scale(1.02);
+        }
+        .blog-number {
+            font-size: 1.7rem;
+            font-family: "Merienda";
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-right: 15px;
+            color: #fff8f0;
+        }
+        .blog-link {
+            font-size: 15px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: none;
+            color: #fff8f0;
+            display: block;
+            width: 100%;
+        }
+/* End of blog */

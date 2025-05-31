@@ -1,0 +1,363 @@
+body {
+    background-color: #fff8f0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/* Background and Layout */
+.custom-background {
+background: url(thoon_image/Images\ for\ Website\ \(2\).png) center;
+object-fit: cover;
+padding-top: 140px;
+padding-bottom: 40px;
+border-bottom: 2px solid #dc5216;
+}
+
+.text-container {
+padding: 20px;
+text-align: left;
+margin-left: 30px;
+}
+a {
+  text-decoration: none;
+}
+.text-container h1 {
+color: #dc5216;
+font-size: 1.7rem;
+font-family: 'Merienda';
+font-style: normal;
+font-weight: 500;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.477);
+}
+
+.challenge-hero-desc {
+font-family: 'Ubuntu';
+font-weight: 400;
+font-size: 15px;
+font-style: normal;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.477);
+}
+
+.challenge-hero-tag {
+font-family: 'Ubuntu';
+font-weight: 400;
+font-size: 15px;
+font-style: normal;
+margin-top: 10px;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.477);
+}
+
+.img-fluid {
+max-width: 70%;
+border-radius: 50%;
+height: 300px;
+border: 2px solid #dc5216;
+animation-name: plate;
+animation-duration: 30s;
+animation-iteration-count: infinite;
+}
+@keyframes plate {
+    0%   { transform: rotate(-7deg); }
+      50%  { transform: rotate(7deg); }
+      100% { transform: rotate(-7deg); }
+}
+@media (max-width: 768px) {
+.text-container {
+    text-align: center;
+}
+.text-container h1 {
+    font-size: 2rem;
+}
+}
+/* Hero image styling end */
+
+/* rules and perks */
+.challenge-rules-section {
+    margin-top: 120px;
+}
+.challenge-rules-title {
+      font-family: 'Merienda', cursive;
+      font-size: 1.7rem;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      color: #dc5216;
+    }
+
+    .challenge-rules-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: #dc5216;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .challenge-rules-title:hover::after {
+      width: 100%;
+    }
+
+    .challenge-rules-description {
+      font-family: 'Ubuntu';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      color: #dc5216;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+    }
+
+    .challenge-rules-description:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px #dc511649;
+      background-color: #dc5216;
+      color: #fff8f0;
+    }
+
+    .challenge-rules-icon {
+      color: #dc5216;
+      margin-right: 5px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .challenge-rules-description:hover .challenge-rules-icon {
+      transform: translateY(-3px);
+      color: #fff8f0;
+    }
+
+    .challenge-rules-section {
+      padding: 2rem 1rem;
+    }
+
+    .challenge-rules-image {
+      max-width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      animation: none;
+    }
+
+    .challenge-rules-image:hover {
+      transform: scale(1.05);
+    }
+
+    .challenge-rules-text-group {
+      margin-bottom: 1.5rem;
+    }
+
+/* pantry */
+.real-challenge-main-title {
+      font-family: 'Merienda';
+      font-size: 1.7rem;
+      color: #dc5216;
+      font-weight: bold;
+    }
+    .real-challenge-subtitle {
+      font-family: 'Ubuntu';
+      font-size: 15px;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .real-challenge-join-btn {
+        border-radius: 30px;
+      background: #ea713c;
+      color: #fff8f0;
+      padding: 0.5rem 1rem;
+      border: none;
+      font-family: 'Ubuntu';
+      font-size: 15px;
+      font-weight: 400;
+      font-style: normal;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .real-challenge-join-btn:hover {
+      background: #dc5216;
+      transform: scale(1.05);
+    }
+    .real-challenge-examples {
+        margin-left: 5%;
+    }
+    @media (max-width:768px) {
+        .real-challenge-examples {
+            width: 100px;
+            margin-left: 10%;
+        }
+    }
+    .real-challenge-card {
+      background-color: #ea713c;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 390px;
+      margin-bottom: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .real-challenge-card:hover {
+      transform: translateY(-5px);
+      background-color: #dc5216;
+    }
+    .real-challenge-card img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .real-challenge-card:hover img {
+      transform: scale(1.1);
+    }
+    .real-challenge-card-title {
+      font-family: 'Merienda', cursive;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #fff8f0;
+    }
+    .real-challenge-card-section-title {
+        color: #dc5216;
+        font-weight: bold;
+      font-family: 'Merienda', cursive;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+/* outstanding */
+.kitchen-heroes-section {
+      background-color: #fff8f0;
+      color: #dc5216;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .kitchen-heroes-title {
+      font-family: 'Merienda';
+      font-size: 1.7rem;
+      margin-bottom: 2rem;
+    }
+    .kitchen-heroes-img {
+      border-radius: 2rem;
+      width: 80%;
+      margin: 0 auto;
+    }
+    .kitchen-heroes-img img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border: 2px solid #dc5216;
+        border-radius: 30px;
+    }
+    .kitchen-heroes-criteria {
+      text-align: left;
+      padding-left: 2rem;
+    }
+    .criteria-desc {
+        font-family: 'Ubuntu';
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .criteria-icon {
+      width: 32px;
+      height: 32px;
+      background-color: #dc5216;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      margin-right: 1rem;
+    }
+
+/* challenge gallery */
+.challenge-gallery-carousel {
+    background: url(thoon_image/recipehubhero.gif);
+    max-width: 100%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.challenge-gallery-card .card {
+    border: 2px solid #dc5216;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    background-color: #fff8f0c0;
+    overflow: hidden;
+    box-shadow: 0px 2px 9px #dc51166c;
+    transition: transform 0.3s;
+    margin-bottom: 25px;
+}
+
+.challenge-gallery-card .card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.challenge-gallery-card .card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #343a40;
+}
+
+.challenge-gallery-card img {
+    width: 160px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    animation: none;
+}
+
+.challenge-gallery-card .card-subtitle {
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.challenge-gallery-card .card-text {
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.challenge-gallery-card .rating i {
+    color: #dc5216;
+    font-size: 1.2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    padding: 10px;
+    border-radius: 50%;
+}
+/* badges for b4 and after */
+.challenge-img-box {
+    position: relative;
+    display: inline-block;
+}
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #dc5216;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Ubuntu';
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.before-badge {
+    background-color: #dc5216; 
+}
+
+.after-badge {
+    background-color: #dc5216; 
+}
+/* carousel responsive */

@@ -1,0 +1,170 @@
+    body {
+      overflow-x: hidden;
+    }
+    .tab-pane-card {
+      border: 2px solid #ff7e5f;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(255, 126, 95, 0.2);
+    }
+
+    .accordion-button {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    /* Change background and text color of active accordion */
+    .accordion-button:not(.collapsed) {
+        background-color: #ea713c; /* custom background */
+        color: white; /*custom text color */
+        box-shadow: none; /* remove blue focus shadow */
+    }
+
+    /* Change hover/focus color */
+    .accordion-button:focus {
+        border-color: #ea713c;
+        box-shadow: none;
+    }
+
+    /* When accordion is collapsed (closed) — white icon */
+    .accordion-button.collapsed::after {
+      filter: brightness(0) saturate(100%) invert(55%) sepia(83%) saturate(2845%) hue-rotate(2deg) brightness(100%) contrast(110%);
+    
+    }
+
+    /* When accordion is expanded (open) — orange icon */
+    .accordion-button::after {
+      filter: brightness(0) invert(1);
+    }
+
+    .card {
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+.big_title {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+
+ 
+.small_title {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+ 
+.other_text {
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+    .read-more {
+      color: #c0392b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    .plate-icon::before {
+      content: "🍽 ";
+    }
+  
+    .instructions-section {
+      border: 2px solid #dc5216;
+      background: url(thoon_image/starchyherosmalldvs.png) no-repeat center fixed;
+      background-size: cover;
+      padding: 100px 40px;
+    }
+    
+     .slide-container {
+        width: 100%;
+        height:auto;
+        background-color: #fff8f0a8;
+        backdrop-filter: blur(3px);
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .slide-container img{
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        top:-45%;
+    }
+     
+    @media screen and (max-width:768px) {
+        .slide-container {
+          margin-bottom: 80px;
+        }
+        .slide-container img {
+         top: -20%;
+        }
+    }
+
+     @media screen and (max-width:992px) {
+        .slide-container img {
+         top: -15%;
+        }
+    }
+
+    .recipecard-hero {
+      height: 100vh;
+      width: 100vw;
+      background: url(shoon_image/hero.png) no-repeat center fixed;
+      background-size: cover;
+    }
+
+    .ins {
+      margin-top: 100px;
+    }
+    
+.accordion-body h6 {
+
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+
+
+}
+.accordion-body p{
+   font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal
+
+}
+.accordion-body h1 {
+
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+
+
+}

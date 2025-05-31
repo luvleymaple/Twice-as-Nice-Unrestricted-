@@ -1,0 +1,38 @@
+
+    body {
+      background: linear-gradient(to right, #fff8f0,  #dc51169c);
+    }
+
+    .reference-container {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+    }
+
+    .reference-title {
+      font-size: 2.5rem;
+      color: #dc5216;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .reference-list li {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+     .reference-list li a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .reference-list li a:hover {
+      text-decoration: underline;
+      color: #dc5216;
+    }
+
+
+

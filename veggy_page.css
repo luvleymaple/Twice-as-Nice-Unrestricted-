@@ -1,0 +1,422 @@
+body {
+            background-color: #fff8f0;
+        }
+        .veggy-hero-box {
+            background: linear-gradient(to bottom, #FFF8F0 , #f0a484 , #ea713c);
+        }
+        .veggy-hero-pic img {
+            margin-bottom: 0px;
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in ;
+        }
+        .veggy-hero-pic {
+            margin-right: 5%;
+        }
+        .veggy-hero-pic img:hover {
+            transform: scale(1.1);
+        }
+        
+        .hero-typography h1 {
+            color: #dc5216;
+            font-size: 1.7rem;
+            font-family: "Merienda";
+            font-weight: bold;
+            font-style: normal;
+            text-shadow: 2px 2px 3px rgba(240, 240, 240, 0.306);
+        }
+        .hero-typography p {
+            color: #2d2d2d;
+            font-size: 16px;
+            font-family: "Kurale", serif;
+            font-weight: 400;
+            font-style: normal;
+            /* text-shadow: 2px 2px 3px rgba(116, 116, 116, 0.306); */
+        }
+        .veggy-recipes {
+            background-color: #dc5216;
+            padding: 10px;
+            color: #fff8f0;
+            border-radius: 50px;
+            border: none;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 15px;
+            font-family: "Ubuntu", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .veggy-recipes:hover {
+            background-color: #dc5216;
+            box-shadow: 0px 0px 20px #dc5216;
+        }
+        .veggy-recipes .btn-span-class {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .veggy-recipes .btn-span-class:after {
+            content: '>';
+            font-size: larger;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .veggy-recipes:hover .btn-span-class {
+            padding-right: 25px;
+        }
+
+        .veggy-recipes:hover .btn-span-class:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .veggy-recipes-explore {
+            background-color: #ea713c;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: #fff8f0;
+            border-radius: 15px;
+            border: none;
+            transition: all 0.5s;
+            cursor: pointer;
+            font-size: 13px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 10%;
+        }
+        .veggy-recipes-explore:hover {
+            background-color: #dc5216;
+            color: #ffffff;
+        }
+        .nav .nav-link{
+            color: #dc5216;
+            border-radius: 25px;
+        }
+        @media only screen and (max-width: 768px) {
+            .veggy-hero-pic img {
+                height: 250px; /* Reduce height for mobile */
+                width: 100%;
+                object-fit: cover;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
+            .hero-typography {
+                text-align: center; /* Center text on mobile */
+                padding: 2rem 1rem;
+            }
+
+            .hero-typography h1 {
+                font-size: 1.4rem;
+            }
+
+            .hero-typography p {
+                font-size: 15px;
+            }
+        }
+        .veggy-recipes-heading {
+            color: #dc5216;
+            font-size: 1.7rem;
+            font-family: "Merienda";
+            font-weight: bold;
+            font-style: normal;
+            margin-bottom: 2rem;
+        }
+
+        .veggy-button {
+            background-color: #ea713c;
+            border-radius: 20px;
+            padding: 5px;
+            border: none;
+        }
+
+
+/* Hide/show tabs vs dropdown by screen size */
+@media (max-width: 768px) {
+  .veggy-recipe-tab-vertical {
+    display: none !important;
+  }
+  .veggy-recipe-dropdown {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .veggy-recipe-dropdown {
+    display: none !important;
+  }
+}
+
+/* Custom nav tab styling */
+.veggy-recipe-tab-vertical .nav-link {
+  color: #333;
+  background-color: #FFF8F0;
+  border: 1px solid #dc5216;
+  border-radius: 30px;
+  margin-bottom: 6px;
+  text-align: left;
+  font-size: 15px;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  transition: all 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.veggy-recipe-tab-vertical .nav-link:hover,
+.veggy-recipe-tab-vertical .nav-link.active {
+  background-color: #dc5216;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+}
+
+/* Dropdown */
+.veggy-recipe-dropdown .veggy-small-dropdown {
+  background-color: #dc5216;
+  color: white;
+  font-size: 15px;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+ 
+}
+.veggy-small-dropdown-bg {
+    margin-left: 2rem;
+    background-color: #FFF8F0;
+    border: 2px solid #dc5216;
+}
+
+.veggy-recipe-dropdown .dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+
+.veggy-recipe-dropdown .dropdown-menu .dropdown-item.active,
+.veggy-recipe-dropdown .dropdown-menu .dropdown-item:focus,
+.veggy-recipe-dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #FFF8F0;
+  transform: translateY(-2px);
+  color: #dc5216;
+}
+
+/* Recipe Cards */
+.veggy-recipe-tab-pane .card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+
+.veggy-recipe-tab-pane .btn-primary {
+  background-color: #dc5216;
+  border: none;
+  font-size: 15px;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  padding: 0.375rem 0.75rem;
+  border-radius: 20px;
+}
+
+/* Badge */
+.veggy-recipe-badge {
+  position: absolute;
+  background: #ffc107;
+  color: #000;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  top: 8px;
+  left: 8px;
+  border-radius: 0.25rem;
+  z-index: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive spacing on tab content */
+.veggy-recipe-tab-pane {
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+.veggy-rcp-img img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #dc5216;
+    border-radius: 20px;
+}
+.veggy-cut {
+    border-bottom: 1px solid #dc5216;
+    margin-top: 2%;
+}
+.veggy-rcp-explain .item-title {
+    color: #dc5216;
+            font-size: 1.2rem;
+            font-family: "Merienda";
+            font-weight: bold;
+            font-style: normal;
+}
+.veggy-rcp-explain .item-description {
+    font-size: 15px;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  color: #000;
+}
+.veggy-rcp-explore {
+    background-color: #ea713c;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: #fff8f0;
+            border-radius: 15px;
+            border: none;
+            transition: all 0.5s;
+            cursor: pointer;
+            font-size: 15px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 10px;
+}
+.veggy-rcp-explore:hover {
+    background-color: #dc5216;
+}
+.rating-stars-veggy {
+    color: #dc5216;
+            font-size: 15px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: lighter;
+            font-style: normal;
+}
+.veggy-card-info-item {
+    color: #dc5216;
+            font-size: 15px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: lighter;
+            font-style: normal;
+}
+
+/* test */
+/* Sidebar Styles */
+.sidebar {
+    padding: 30px;
+}
+
+/* Category Tabs */
+.category-tabs .category-link {
+    font-weight: bold;
+    color: #fff; /* Default text color */
+    background-color: #dc5216; /* Default background color */
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 30px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+
+/* Tab Content */
+.tab-container {
+    display : flex;
+    justify-content: flex-start;
+
+    padding: 30px;
+    border-radius: 5px;
+}
+
+/* Tab Pane Item */
+.tab-pane-item {
+    margin-left: 50px;
+    justify-content: center;
+}
+
+.tab-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #a91f45;
+    padding-bottom: 10px;
+}
+
+/* Item Image */
+.item-image img {
+    border: 2px solid #8A1938;
+    display: flex;
+    justify-self: center;
+    margin-left: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* Item Details */
+.item-details {
+    padding-left: 15px;
+}
+
+.item-title {
+    color: #8A1938;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item-description {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 5px;
+}
+.item-button {
+    background: #a91f45;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.item-button:hover {
+    background-color: white;
+    color: #8A1938;
+    border: 1px solid #8A1938;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .tab-item {
+        flex-direction: row;
+    }
+    .item-details {
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+    .tab-pane-item {
+        margin-left: 0px;
+        justify-content: center;
+    }
+    .explore-box {
+        width: 200px;                 /* Adjust the overall width */
+        margin: 0 auto;               /* Center the container itself */
+     
+    }
+}

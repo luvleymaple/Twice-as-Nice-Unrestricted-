@@ -1,0 +1,183 @@
+.big_title {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+
+ 
+.small_title {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+img {
+  object-fit: cover;
+}
+.other_text {
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+  
+    .food-card {
+      position: relative;
+      color: white;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-label {
+      position: absolute;
+      bottom: 1px;
+      left: 1px;
+    }
+
+    .card-label h6 {
+      margin: 0;
+      font-weight: bold;
+      background-color: white;
+      color: #fd7452;
+      padding: 2px 8px;
+      display: inline-block;
+      border-radius: 0;
+    }
+
+    .title-bg {
+       background-color:#dc5216;
+    }
+    .title-box {
+      padding: 2rem;
+    }
+
+    .title-box h1 {
+      color: white;
+      font-weight: bold;
+    }
+
+    .browse-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .browse-link:hover {
+      text-decoration: underline;
+    }
+
+     .progress-section {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .stat-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .stat-percent {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .progress {
+      height: 22px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      font-weight: bold;
+      padding-left: 10px;
+    }
+
+    .card {
+      height: 510px;
+    }
+
+    @media screen and (max-width:768px) {
+      .card {
+        height: 500px;
+      }
+      .card-body img {
+        height: 330px;
+      }
+    }
+    
+    .bg-orange {
+      background-color: #dc5216 !important;
+    }
+
+    .smallsize h4 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #dc5216;
+      font-weight: bold;
+    }
+    .bigsize h5 {
+      font-weight: bold;
+      text-align: center;
+      color: #dc5216;
+      padding: 5px 10px;
+    }
+    .bigsize img {
+      width: 100vw;
+      height: 90%;
+    }
+   
+    .smallsize img {
+      width: 100vw;
+      height: 300px;
+    }
+
+    .deli img {
+      border: 2px solid #dc5216;
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in ;
+    }
+    .deli img:hover {
+      transform: scale(1.02);
+    }
+
+ 
+/* Mobile View  */
+ @media screen and (max-width:992px) {
+  .deli {
+    text-align: center; /* centers inline elements like images */
+  }
+  .deli img {
+    height: 500px;
+    max-width: 400px;
+    display: block;        /* makes image a block-level element */
+    margin: 0 auto;        /* centers the block image */
+  }
+   .smallsize h4 {
+      font-size: 20px;
+    }
+    .bigsize h5 {
+      font-size: 20px;
+    }
+    .deli .yes-margin {
+      margin-bottom: 3rem;
+    }
+    }
+

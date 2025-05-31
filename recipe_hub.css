@@ -1,0 +1,164 @@
+body, html {
+          background-color: #fff8f0;
+        }
+        /* Hero Background */
+.recipe-hero {
+  background: url(thoon_image/recipehubhero.gif) center center/cover no-repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #dc5216;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .recipe-hero h1 {
+    font-size: 2rem;
+  }
+
+  .recipe-hero p {
+    font-size: 1rem;
+  }
+}
+
+.recipe-hub-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  
+}
+.recipe-hub-card:hover {
+  transform: translateY(-2px);
+}
+.recipe-hub-text-box p {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.recipe-hub-heading {
+  font-size: 1.7rem;
+  color: #fff;
+  font-family: "Merienda";
+  font-weight: bold;
+  font-style: normal;
+  text-shadow: 2px 2px 3px rgba(240, 240, 240, 0.306);
+}
+/* .recipe-hub-card {
+  margin-top: 10px;
+  background-color: #e1571f;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   background: url(thoon_image/starchyherosmalldvs.png) center center/cover no-repeat;
+} */
+ .card-starchy {
+  margin-top: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: url(thoon_image/starchyherosmalldvs.png) center center/cover no-repeat;
+}
+
+.card-meaty {
+  object-fit: cover;
+  margin-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: url(thoon_image/starchylftovrintro.png) center center/cover no-repeat;
+}
+
+.card-veggy {
+  object-fit: cover;
+  margin-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: url(thoon_image/starchyherosmalldvs.png) center center/cover no-repeat;
+}
+.recipe-hub-card h5 {
+  color: #fff8f0;
+  font-family: "Merienda";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+.hub-card-title + p {
+  color: #fff8f0;
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+/* Quote */
+.quote-banner-container {
+  background-color: #fff8f0;
+  padding: 20px;
+}
+
+.quote-banner {
+  width: 100%;
+  max-width: 800px; /* Wider banner */
+  height: 30vh;
+  position: relative;
+  border-radius: 50rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+  font-family: "Merienda";
+  font-size: 1.6rem;
+  color: #fff8f0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.338); /* optional for contrast */
+}
+.quote-banner img {
+  animation: zoomInOut 10s ease-in-out infinite;
+}
+
+/* Keyframes */
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+#hub-title {
+  color: #dc5216;
+            font-size: 1.7rem;
+            font-family: "Merienda";
+            font-style: normal;
+            text-align: center;
+            margin-top: 8%;
+            margin-bottom: 5%;
+}
+.hub-category-img {
+  width: 90%;
+  height: 50vh;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.hub-category-typography {
+  margin-right: 5%;
+}
+@media (max-width: 768px) {
+  .hub-category-typography {
+    margin-right: 0;
+  }
+}
+.hub-category-text-box h3 {
+  font-size: 1.2rem;
+  font-family: "Merienda";
+            font-style: normal;
+            text-align: left;
+            margin-top: 8%;
+            margin-bottom: 5%;
+            color: #dc5216;
+}
+.hub-category p {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.btn-sm:focus {
+  color: #fff;
+  background-color: #dc5216;
+}

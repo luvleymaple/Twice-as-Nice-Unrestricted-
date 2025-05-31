@@ -1,0 +1,189 @@
+.image-combo-wrapper {
+      position: relative;
+      width: fit-content;
+      margin: auto;
+      margin-bottom: 60px;
+    }
+
+    .main-pill-image {
+      position: relative;
+      z-index: 2;
+    }
+
+    .main-pill-image img {
+      width:330px;
+      height: 360px;
+      border-radius: 180px;
+      object-fit: cover;
+      display: block;
+      border: 6px solid #fff8f0;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+    @media (max-width:992px) {
+        .image-combo-wrapper .main-pill-image img {
+            width: 230px;
+        }
+    }
+    .image-section{
+        padding-right: 100px;
+    }    
+
+    .cta {
+        position: relative;
+        height:400px;
+        min-width: 250px;
+        background: url(yoon_image/yoon1.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+ 
+    .cta .overlay_header {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+ .cta .cta1 {
+        z-index: 2;
+        position: relative;
+        color: black;
+    }    
+.big_title {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+
+ 
+.small_title {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #dc5216;
+}
+ 
+.small_title1 {
+    font-size: 1.2rem;
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-style: normal;
+}
+.other_text {
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  background-color: #fff8f0;
+}
+    .side-rounded-image {
+      position: absolute;
+      right: -100px;
+      bottom: -30px;
+      z-index: 1;
+    }
+      
+    .about_us {
+      position: relative;
+      height: 430px;
+      background: url(yoon_image/yoon8.png);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-bottom: 100px;
+    }
+ 
+    .about_us .overlay_header {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+ 
+    .about_us .header_text {
+      z-index: 3;
+      position: relative;
+    }
+ 
+  /* General nav-link style (when NOT active) */
+  #scroll_tips .nav-link {
+    background-color: #fff8f0;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 27px;
+    margin-bottom: 4px;
+  }
+
+  /* Active nav-link style */
+  #scroll_tips .nav-link.active {
+    background-color: #ea713c;
+    color: #fff;
+    border-radius: 27px;
+  }
+
+  #scroll_tips .nav-link:hover {
+    background-color: #dc5216;
+    color: #ffffff;
+    border-radius: 27px;
+  }
+
+    .side-rounded-image img {
+      width: 220px;
+      height: 300px;
+      border-radius: 150px;
+      object-fit: cover;
+      background-color: white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    }
+
+    .about-section small {
+      color:#ea713c;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+.header_text .big_title {
+  color: #fff8f0;
+}
+      .btn_msv {
+      background-color:  #FF5733;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-weight: 600;
+      border-radius: 20px;
+    }
+        #white_div1 {
+            background-color: #fff8f0;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px #dc5216;
+            text-align: center;
+
+        }
+    .btn_msv:hover {
+        background-color: #FF5733;
+        box-shadow: 0 5px 7px hsl(18, 81%, 58%);
+    }
+    .cfa{
+       background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(yoon_image/yoon7.jpg);
+    }
+
+    .intro-text{
+      margin: auto;
+    }
+    .storage-tab-pane .nav-link {
+        background-color: #dc5126;
+        color: #fff8f0;
+        border-radius: 30px;
+    }

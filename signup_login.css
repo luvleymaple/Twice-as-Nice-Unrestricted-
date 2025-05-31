@@ -1,0 +1,221 @@
+.btn-custom {
+    border-color: #FF5733;
+    color: rgb(0, 0, 0);
+    align-self: center;
+}
+
+.su-bt {
+    padding: auto;
+    margin: auto;
+    display: block;
+}
+
+.btn-custom2 {
+    border-color: white;
+    background-color: #ea713c;
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #ea713c;
+    box-shadow: 0 5px 7px hsl(18, 81%, 58%);
+}
+.Big-Heading {
+    color: #dc5216;
+}
+.custom-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: transparent;
+}
+
+.custom-input:focus {
+    border-bottom: 1px solid #FF5733;
+}
+
+.custom-username {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-label {
+    font-weight: bolder;
+    color: black;
+}
+
+.icons {
+    padding: 5px;
+    color: #FF5733;
+}
+
+.forgot-password,
+.form-text {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #817f7f;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #888;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+    color: #FF5733;
+}
+
+/* Close Button */
+.btn-close {
+    filter: invert(12%) sepia(95%) saturate(5000%) hue-rotate(355deg) brightness(80%) contrast(120%);
+}
+
+/* Input Focus Effects  */
+.form-control:focus,
+.form-select:focus {
+    border-color: #ea713c;
+    box-shadow: 0 0 5px #dc5216;
+    outline: none;
+}
+
+/* Checkbox & Radio Button Focus and Checked States */
+.form-check-input:focus,
+.form-check-input:checked,
+.form-switch .form-check-input:focus,
+.form-switch .form-check-input:checked,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+    border-color: #ea713c;
+    box-shadow: 0 0 5px #dc5216;
+    outline: none;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked,
+.form-check-input:checked {
+    background-color: #ea713c;
+    border-color: #dc5216;
+}
+
+.log-in {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #dc5216;
+}
+
+.log-in:hover {
+    text-decoration: underline;
+    color: #FF5733;
+}
+
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#white_div {
+    background-color: rgba(255, 238, 238, 0.795);
+    padding: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 161, 29, 0.774);
+    text-align: center;
+}
+
+.birthday {
+    color: white;
+    background-color: #ea713c;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.signup-right {
+    background-color: #fff;
+    padding: 2rem;
+    overflow-y: auto;
+    max-height: 90vh;
+    max-width: 100%;
+}
+
+.signup-right::-webkit-scrollbar {
+    width: 6px;
+}
+
+.signup-right::-webkit-scrollbar-thumb {
+    background-color: #dc5216;
+    border-radius: 10px;
+}
+
+.signup-left {
+    display: block;
+    background: url(yoon_image/yoon7.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.btn-submit {
+    background-color: #ea713c;
+    border: none;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #dc5216;
+}
+
+.form-section h3 {
+    font-weight: 600;
+}
+
+.form-section {
+    background-color: #fff8f0;
+}
+
+.Big-Heading {
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-style: normal;
+}
+
+.Sub-title {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-style: normal;
+}
+
+.text {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font {
+    font-size: 15px;
+}
+
+/* Forgot Password Modal Background & Card */
+.bg-pw {
+    background-color: #fff8f0; 
+    border-radius: 15px;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+

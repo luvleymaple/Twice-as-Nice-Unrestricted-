@@ -1,0 +1,96 @@
+ #con{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(thethmue_image/market.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+.small_title2 {
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+}
+#white_div {
+    background-color: rgba(255, 238, 238, 0.795);
+    padding-top: 30px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+#food1{
+    height: 80%;
+    width: 85%;
+    margin-right: 10px;
+    border-radius: 20px;
+    }
+#food2{
+    height: 85%;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    }
+#food3{
+    height: 50%;
+    width: 85%;
+    margin-top:90px;
+    border-radius: 20px;
+    }
+#food4{
+    height: 400px;
+    width: 90%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    }
+#quote{
+    background-image: url(yoon_image/yoon1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+#squote{
+    margin-top: 30px;
+}
+.quote .big_title{
+    color: rgba(255, 238, 238, 0.795);
+}
+.shop:hover a {
+    color: #fff;
+    }
+
+.shop:hover h4 {
+    transform: scale(1.1);
+    color: #dc5216;
+    }
+h1, h3{
+    text-align: center;
+    color: #dc5216;
+    font-size: 1.7rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+}
+h4{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Merienda";
+    font-weight: bold;
+    font-style: normal;
+}
+p{
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
